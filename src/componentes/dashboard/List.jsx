@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from 'react-router-dom';
 import "../../assets/css/dashboard.css";
 import { useState } from "react";
 import { useNavigate, Navigate } from "react-router-dom";
@@ -46,7 +47,7 @@ const List = () => {
       <div className="container m-5 p-4 rounded mx-auto bg-light shadow">
         {/* App title section */}
         <div className="row mt-5 p-4">
-          <a href="/dashboard">⬅Home</a>
+        <Link to={`/dashboard`}>Home</Link>
           <div className="col">
             <div className="p-1 h1 text-primary text-center mx-auto display-inline-block">
               <u>

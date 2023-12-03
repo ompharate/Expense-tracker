@@ -10,9 +10,9 @@ function App() {
     <>
      <Router>
       <Routes>
-        <Route path="/" exact element={<Auth/>} />
-        <Route path="/dashboard" exact element={<Dashboard/>} />
-        <Route path="/list" exact element={<List/>} />
+        <Route path="/"  element={<Auth/>} />
+        <Route path="/dashboard"  element={<Dashboard/>} />
+        <Route path="/list"  element={<List/>} />
       </Routes>
      </Router>
     </>

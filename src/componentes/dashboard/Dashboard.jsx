@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from 'react-router-dom';
 import "../../assets/css/dashboard.css";
 import { useState } from "react";
 import { useNavigate, Navigate } from "react-router-dom";
@@ -268,12 +269,8 @@ const Dashboard = () => {
                       index === 2 && (
                         <tr key={id}>
                           <td colSpan="5">
-                            <a
-                              href="/list"
-                              className="btn btn-light float-right"
-                            >
-                              <b>View More</b>
-                            </a>
+                          <Link to={`/list`}>View More
+                           </Link>
                           </td>
                         </tr>
                       )
